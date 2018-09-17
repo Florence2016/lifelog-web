@@ -1,0 +1,44 @@
+
+.mdl-layout-title {
+  display: none;
+}
+
+.mdl-layout__header-row {
+  padding-left: 16px;
+}
+
+.mdl-layout__header-row .mdl-navigation ul {
+  margin: 0;
+}
+
+.mdl-layout__header-row .mdl-navigation ul li {
+  display: inline-block;
+  list-style: none;
+}
+
+#profile * {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+#profile p {
+  margin-bottom: 0;
+  display: none;
+}
+
+#profile a {
+  color: white;
+}
+
+#profile a:hover {
+  text-decoration: none;
+}
+
+#profile img {
+  border-radius: 100%;
+}
+
+#container {
+  min-height: 300px;
+  margin: 0 10px;
+}

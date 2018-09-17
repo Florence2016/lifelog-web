@@ -1,0 +1,35 @@
+<material-list>
+    <div>
+        <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+
+            <thead>
+            <tr>
+                <th class="mdl-data-table__cell--non-numeric">ID</th>
+                <th class="mdl-data-table__cell--non-numeric">Name</th>
+                <th class="mdl-data-table__cell--non-numeric">Address</th>
+                <th class="mdl-data-table__cell--non-numeric">Contact</th>
+                <th class="mdl-data-table__cell--non-numeric">Invited by</th>
+                <th class="mdl-data-table__cell--non-numeric">Date</th>
+            </tr>
+            </thead>
+            <tbody class="newfriendsList">
+            <tr *ngFor="let newfriends of newfriendsList"
+            >
+                <td class="mdl-data-table__cell--non-numeric">{{newfriends.id}}</td>
+                <td class="mdl-data-table__cell--non-numeric"
+                    style="width: 10em; height: 1.2em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{{newfriends.name}}</td>
+                <td class="mdl-data-table__cell--non-numeric"
+                    style="width: 10em; height: 1.2em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{{newfriends.address}}</td>
+                <td class="mdl-data-table__cell--non-numeric">{{newfriends.contact}}</td>
+                <td class="mdl-data-table__cell--non-numeric">{{newfriends.invitedby}}</td>
+                <td class="mdl-data-table__cell--non-numeric">{{newfriends.date}}</td>
+
+            </tr>
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+    </div>
+
+</material-list>

@@ -1,0 +1,14 @@
+<header class="mdl-layout__header mdl-layout__header--scroll mdl-color--primary">
+
+<h4>Test</h4>
+
+    <ul class="prof-username" id="profile" *ngIf="service.user != null">
+        <p class="prof-status">
+            <img [src]="service.user.photoURL" width="50" height="40">
+            ({{service.user.email}})
+            <a  (click)="service.signOut()">Logout</a>
+        </p>
+    </ul>
+
+
+</header>

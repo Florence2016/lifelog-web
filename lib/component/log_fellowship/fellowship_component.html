@@ -1,0 +1,29 @@
+<material-list>
+    <div>
+        <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+
+            <thead>
+            <tr>
+                <th class="mdl-data-table__cell--non-numeric">ID</th>
+                <th class="mdl-data-table__cell--non-numeric">Name</th>
+                <th class="mdl-data-table__cell--non-numeric">Attendance</th>
+                <th class="mdl-data-table__cell--non-numeric">Date</th>
+            </tr>
+            </thead>
+            <tbody class="fellowshipList">
+            <tr *ngFor="let fellowship of fellowshipList"
+            >
+                <td class="mdl-data-table__cell--non-numeric">{{fellowship.id}}</td>
+                <td class="mdl-data-table__cell--non-numeric">{{fellowship.name}}</td>
+                <td class="mdl-data-table__cell--non-numeric">{{fellowship.attendance}}</td>
+                <td class="mdl-data-table__cell--non-numeric">{{fellowship.date}}</td>
+
+            </tr>
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+    </div>
+
+</material-list>

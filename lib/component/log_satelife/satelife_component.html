@@ -1,0 +1,33 @@
+<material-list>
+    <div>
+        <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+
+            <thead>
+            <tr>
+                <th class="mdl-data-table__cell--non-numeric">ID</th>
+                <th class="mdl-data-table__cell--non-numeric">Name</th>
+                <th class="mdl-data-table__cell--non-numeric">Attendees</th>
+                <th class="mdl-data-table__cell--non-numeric">Attendance</th>
+                <th class="mdl-data-table__cell--non-numeric">Date</th>
+            </tr>
+            </thead>
+            <tbody class="satelifeList">
+            <tr *ngFor="let satelife of satelifeList">
+                <td class="mdl-data-table__cell--non-numeric">{{satelife.id}}</td>
+                <td class="mdl-data-table__cell--non-numeric"
+                    style="width: 10em; height: 1.2em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{{satelife.name}}</td>
+                <td class="mdl-data-table__cell--non-numeric"
+                    style="width: 10em; height: 1.2em; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{{satelife.attendee}}</td>
+                <td class="mdl-data-table__cell--non-numeric">{{satelife.attendance}}</td>
+                <td class="mdl-data-table__cell--non-numeric">{{satelife.date}}</td>
+
+
+            </tr>
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+    </div>
+
+</material-list>

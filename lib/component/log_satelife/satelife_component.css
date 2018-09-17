@@ -1,0 +1,29 @@
+.mdl-data-table {
+    margin-left: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.mdl-data-table tbody{
+  display:block;
+  overflow: auto;
+  height: 400px;
+  width:100%;
+}
+.mdl-data-table thead tr{
+  display:block;
+  width:100%;
+}
+
+.mdl-data-table th,{
+  padding: 5px;
+  text-align: center;
+  width: 150px;
+  }
+
+.mdl-data-table td {
+  padding: 5px;
+  max-width: 150px;
+  text-align: center;
+  width: 150px;
+  }

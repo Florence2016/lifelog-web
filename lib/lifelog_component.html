@@ -1,0 +1,21 @@
+<form (ngSubmit)="submitForm()" *ngIf="service.user != null" id="lifelog-form">
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <layout-header>
+    </layout-header>
+
+    <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary-dark">
+
+        <a [routerLink]="RoutePaths.dashboard.toUrl()" class="mdl-layout__tab is-active">Dashboard</a>
+        <a [routerLink]="RoutePaths.lifegroups.toUrl()" class="mdl-layout__tab">Lifegroup</a>
+        <a [routerLink]="RoutePaths.newfriends.toUrl()" class="mdl-layout__tab">New Friends</a>
+        <a [routerLink]="RoutePaths.satelifes.toUrl()" class="mdl-layout__tab">Satelife</a>
+        <a [routerLink]="RoutePaths.fellowships.toUrl()" class="mdl-layout__tab">Fellowship</a>
+
+    </div>
+
+    <main class="mdl-layout__content">
+        <router-outlet [routes]="Routes.all"></router-outlet>
+    </main>
+    <layout-footer></layout-footer>
+</div>
+</form>

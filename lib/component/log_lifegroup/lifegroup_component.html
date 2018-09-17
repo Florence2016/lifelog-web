@@ -1,0 +1,31 @@
+<material-list>
+    <div>
+        <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+
+            <thead>
+            <tr>
+                <th class="mdl-data-table__cell--non-numeric">ID</th>
+                <th class="mdl-data-table__cell--non-numeric">Name</th>
+                <th class="mdl-data-table__cell--non-numeric">Lifegroup</th>
+                <th class="mdl-data-table__cell--non-numeric">Attendance</th>
+                <th class="mdl-data-table__cell--non-numeric">Date</th>
+            </tr>
+            </thead>
+            <tbody class="lifegroupList">
+            <tr *ngFor="let lifegroup of lifegroupList">
+                <td class="mdl-data-table__cell--non-numeric">{{lifegroup.id}}</td>
+                <td class="mdl-data-table__cell--non-numeric">{{lifegroup.name}}</td>
+                <td class="mdl-data-table__cell--non-numeric">{{lifegroup.lifegroup}}</td>
+                <td class="mdl-data-table__cell--non-numeric">{{lifegroup.attendance}}</td>
+                <td class="mdl-data-table__cell--non-numeric">{{lifegroup.date}}</td>
+
+
+            </tr>
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+    </div>
+
+</material-list>
